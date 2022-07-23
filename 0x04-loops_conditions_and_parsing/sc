@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+echo "Nombre d'arguments ... :  "$#
+echo "Les arguments sont ... :  "$*
+echo "Le second argument est :  "$2
+ 
+echo "Et le code de retour du dernier echo est :  "$?
