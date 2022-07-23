@@ -2,7 +2,6 @@
 # Script that gives information about the school file
 # if the file exists then prints "school file exists"
 # if the file does not exist: school file does not exist
-
 file="school"
 if [ -e "$file" ]
 then
