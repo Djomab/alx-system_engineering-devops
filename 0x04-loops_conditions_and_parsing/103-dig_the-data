@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# using the same of "102-lets_parse_apache_logs":
+# groups visitors by IP and HTTP status code, and displays this data.
+
+awk '{print $1,$9}' apache-access.log | sort | uniq -c | sort -rn
