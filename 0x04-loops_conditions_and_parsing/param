@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo "Nombre de params: $#"
+echo "Tous les params: $*"
+echo "$@"
+echo "$?"
