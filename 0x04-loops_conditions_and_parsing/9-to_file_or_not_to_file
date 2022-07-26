@@ -9,7 +9,7 @@ then
 	if [ -s "$file" ]; then
 		echo "school file is not empty"
 	else
-		echo "school is empty"
+		echo "school file is empty"
 	fi
 	if [ -f "$file" ]; then
                 echo "school is a regular file"
