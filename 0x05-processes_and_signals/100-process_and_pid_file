@@ -7,7 +7,7 @@
 #+  receiving a SIGQUIT or SIGTERM.
 
 terminator() {
-  rm /var/run/holbertonscript.pid
+  rm /var/run/myscript.pid
   exit
 }
 
