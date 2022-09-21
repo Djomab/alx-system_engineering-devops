@@ -19,6 +19,10 @@ file { 'The home page':
   content => "Hello World!\n"
 }
 
+file { '/var/www/error':
+  ensure  => directory
+}
+
 file { 'The 404 page':
   ensure  => file,
   path    => '/var/www/error/404.html',
