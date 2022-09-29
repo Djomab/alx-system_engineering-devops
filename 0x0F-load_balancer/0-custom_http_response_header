@@ -1,17 +1,15 @@
 #!/usr/bin/env bash
-"""
-configure web-02 to be identical to web-01
-The name of the custom HTTP header must be X-Served-By
-The value of the custom HTTP header must be the hostname of the server Nginx is running on
-"""
+# configure web-02 to be identical to web-01
+# The name of the custom HTTP header must be X-Served-By
+# The value of the custom HTTP header must be the hostname of the server Nginx is running on
  
 sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
 sudo mkdir -p /var/www/html /var/www/error
 sudo chmod -R 755 /var/www
-sudo echo 'Hello World!' > /var/www/html/index.html
-sudo echo "Ceci n'est pas une page" > /var/www/html/404.html
+echo 'Hello World!' > /var/www/html/index.html
+echo "Ceci n'est pas une page" > /var/www/html/404.html
 server_config=\
 "server {
 	listen 80 default_server;
