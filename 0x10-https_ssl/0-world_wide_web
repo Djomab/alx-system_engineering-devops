@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Configure your domain zone so that the subdomain www points to your load-balancer IP
 
 subdomains_all=( "www" "lb-01" "web-01" "web-02" )
 
