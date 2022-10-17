@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """returns information about TODO list progress of a given employee"""
 from sys import argv
-from unicodedata import name
 import requests
 
 if __name__ == "__main__":
