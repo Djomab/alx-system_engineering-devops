@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """returns information about TODO list progress of a given employee"""
-from sys import argv
 import requests
+from sys import argv
 
 if __name__ == "__main__":
     """Identifies a user to display completed task info"""
@@ -14,7 +14,7 @@ if __name__ == "__main__":
     for task in userTodos:
         if task.get('completed'):
             completed.append(task.get('title'))
-    print('Employee {} is done with task({}/{}):'
+    print('Employee {} is done with tasks({}/{}):'
           .format(user.get('name'), len(completed), len(userTodos)))
     for task in completed:
         print('\t', task)
